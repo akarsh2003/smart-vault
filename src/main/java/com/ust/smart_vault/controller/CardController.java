@@ -41,6 +41,5 @@ public class CardController {
         String token = jwtUtil.generateToken(cardNumber);
 
         return ResponseEntity.ok(Collections.singletonMap("token", token));
-
     }
 }
